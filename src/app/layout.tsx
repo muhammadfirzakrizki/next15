@@ -1,3 +1,5 @@
+import './globals.css'
+
 export const metadata = {
     title: 'My Next.js App',
     description: 'This is a simple Next.js application.',
