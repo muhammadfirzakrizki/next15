@@ -11,10 +11,10 @@ export default function DocsPage({ params }: DocsPageProps) {
   let description = "Browse our documentation.";
 
   if (slug.length === 1) {
-    title = `Feature: ${slug[0]}`;
+    title = `View: ${slug[0]}`;
     description = "This is a detailed description of the feature.";
   } else if (slug.length === 2) {
-    title = `Feature: ${slug[0]} → Concept: ${slug[1]}`;
+    title = `View: ${slug[0]} → ${slug[1]}`;
     description = "You're viewing a specific concept under the selected feature.";
   }
 
