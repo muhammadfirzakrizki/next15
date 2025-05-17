@@ -1,11 +1,11 @@
-import './globals.css'
+import '@/app/globals.css'
 
 export const metadata = {
     title: 'My Next.js App',
     description: 'This is a simple Next.js application.',
 }
 
-export default function RootLayout({
+export default function AuthLayout({
     children,
 }: {
     children: React.ReactNode
@@ -14,12 +14,9 @@ export default function RootLayout({
         <html lang="en">
 
             <body>
-                <header className="bg-blue-600 text-white p-4">
-                    <h1 className="text-2xl font-bold text-center">Header</h1>
-                </header>
                 {children}
                 <footer className="bg-blue-600 text-white p-4">
-                    <p className="text-center">Footer</p>
+                    <p className="text-center">Footer Auth</p>
                 </footer>
             </body>
         </html>
