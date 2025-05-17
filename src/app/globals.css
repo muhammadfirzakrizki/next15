@@ -27,13 +27,7 @@
     color: var(--accent);
     text-decoration: underline;
   }
-
-  body {
-    min-height: 100vh;
-    background-image: radial-gradient(circle at top left, #e0f2fe 0%, #f0f4ff 100%);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-  }
+  
 }
 
 /* CSS variables */
@@ -53,5 +47,4 @@
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 1rem;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-  padding: 20px;
 }
