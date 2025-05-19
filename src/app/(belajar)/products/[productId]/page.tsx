@@ -1,8 +1,25 @@
+import { Metadata } from 'next';
 import { products } from '@/data/products'; // sesuaikan pathnya
 
 interface ProductsDetailProps {
   params: {
     productId: string;
+  };
+}
+
+// Menambahkan tipe Metadata untuk validasi yang lebih baik
+export async function generateMetadata({ params }: ProductsDetailProps): Promise<Metadata> {
+  const { productId } = params;
+  const product = products.find(p => p.id === Number(productId));
+  if (!product) {
+    return {
+      title: 'Product Not Found',
+      description: 'The product you are looking for does not exist.',
+    };
+  }
+  return {
+    title: `${product.name} - Product Details`,
+    description: `Details about ${product.name}.`,
   };
 }
 
