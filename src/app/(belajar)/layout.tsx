@@ -1,7 +1,10 @@
 import '@/app/globals.css'
 
 export const metadata = {
-    title: 'My Next.js App',
+    title: {
+        default: 'Belajar Next.js',
+        template: '%s | Belajar Next.js',
+    },
     description: 'This is a simple Next.js application.',
 }
 
