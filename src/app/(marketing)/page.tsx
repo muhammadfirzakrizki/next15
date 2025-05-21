@@ -24,6 +24,9 @@ export default function Home() {
             {item.label}
           </Link>
         ))}
+        <Link className="block bg-blue-600 text-white rounded-xl py-4 px-6 text-center font-semibold text-lg shadow-md hover:bg-blue-700 transform hover:scale-105 transition duration-300" href={`/articles/breaking-news-123?lang=en`}>Reading Arctiles in English</Link>
+        <Link className="block bg-blue-600 text-white rounded-xl py-4 px-6 text-center font-semibold text-lg shadow-md hover:bg-blue-700 transform hover:scale-105 transition duration-300" href={`/articles/breaking-news-123?lang=fr`}>Reading Arctiles in France</Link>
+
       </div>
     </div>
   );
