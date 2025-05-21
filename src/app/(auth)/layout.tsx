@@ -1,4 +1,4 @@
-import '@/app/globals.css'
+import '@/app/globals.css';
 
 export const metadata = {
     title: 'My Next.js App',
@@ -12,7 +12,6 @@ export default function AuthLayout({
 }) {
     return (
         <html lang="en">
-
             <body>
                 {children}
                 <footer className="bg-blue-600 text-white p-4">
