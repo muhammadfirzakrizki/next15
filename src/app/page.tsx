@@ -1,5 +1,7 @@
 import Link from "next/link";
 
+import TriggerError from "@/components/trigger-error";
+
 export default function Home() {
   return (
     <div className="w-full max-w-3xl bg-white rounded-3xl shadow-2xl p-10 flex flex-col items-center space-y-8">
@@ -9,6 +11,8 @@ export default function Home() {
       <p className="text-gray-600 text-center max-w-xl">
         Ini adalah homepage sederhana dengan link navigasi yang cantik. Jelajahi halaman lain!
       </p>
+      
+      <TriggerError />
 
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 w-full">
         {[
