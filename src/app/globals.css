@@ -1,9 +1,14 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 @layer base {
-  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+  :root {
+    --background: #f0f4ff;
+    --foreground: #0a2540;
+    --primary: #00d9ff;
+    --primary-light: #3b82f6;
+    --accent: #1e40af;
+    --text-muted: #64748b;
+  }
 
   html {
     font-family: 'Inter', sans-serif;
@@ -27,24 +32,22 @@
     color: var(--accent);
     text-decoration: underline;
   }
-  
 }
 
-/* CSS variables */
-:root {
-  --background: #f0f4ff;
-  --foreground: #0a2540;
-  --primary: #2563eb;
-  --primary-light: #3b82f6;
-  --accent: #1e40af;
-  --text-muted: #64748b;
-}
+@layer utilities {
+  .text-muted {
+    color: var(--text-muted);
+  }
 
-/* Card utility (can go into @layer utilities if you want to use Tailwind classes inside) */
-.card-glass {
-  background-color: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 1rem;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  .card-glass {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 1rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+
+  .card-transition {
+    transition: all 0.3s ease-in-out;
+  }
 }

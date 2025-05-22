@@ -1,4 +1,11 @@
-import '@/app/globals.css'
+import '@/app/globals.css';
+import { Inter } from 'next/font/google';
+
+const inter = Inter({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
+  variable: '--font-inter', // optional untuk custom property
+});
 
 export const metadata = {
     title: 'My Next.js App',
@@ -11,7 +18,7 @@ export default function RootLayout({
     children: React.ReactNode
 }) {
     return (
-        <html lang="en">
+        <html lang="en" className={inter.variable}>
 
             <body>
                 <header className="bg-blue-600 text-white p-4">
